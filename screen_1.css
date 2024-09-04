@@ -54,13 +54,14 @@ html {
     border-radius: 23px;
     border: none;
     transition: box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .next_btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Media Query para desktop */
+
 @media (min-width: 1024px) {
     .screen_1 {
         width: 430px;
