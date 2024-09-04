@@ -11,7 +11,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container {
@@ -22,7 +21,7 @@ html {
     align-items: center;
 }
 
-.conteudo{
+.conteudo {
     height: 168px;
     width: 85%;
     display: flex;
@@ -34,26 +33,24 @@ html {
 
 .screen_1 {
     margin-top: auto;
-    width: 430px;
+    width: 430px; 
     height: 300px;
-    top: -151px;
-    left: -1671px;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .marcador {
-    width: 119px;
-    height: 28px;
-    top: 533px;
-     
+    width: 80px;
+    height: 20px;
 }
 
 .next_btn {
     background-color: #FF6064;
     color: white;
-    width: 336px;
-    height: 45px;
-    top: 586px;
-    left: -1521px;
+    width: 90%;
+    height: 50px;
     border-radius: 23px;
     border: none;
     transition: box-shadow 0.3s;
@@ -61,4 +58,28 @@ html {
 
 .next_btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Query para desktop */
+@media (min-width: 1024px) {
+    .screen_1 {
+        width: 430px;
+        height: 300px;
+        padding: 40px;
+    }
+
+    .marcador {
+        width: 119px;
+        height: 28px;
+    }
+
+    .next_btn {
+        width: 336px;
+        height: 45px;
+    }
+
+    .conteudo {
+        height: 168px;
+        width: 85%;
+    }
 }
