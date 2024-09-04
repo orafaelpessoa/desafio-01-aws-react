@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body,
+html {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    top: -40px;
+    left: -960px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute; 
+    width: 39px; 
+    height: 31.42px; 
+    top: 40px; 
+    left: 100px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.arrow i {
+    font-size: 24px; 
+    color: black; 
+}
+
+.arrow:hover i {
+    color: #FF6064; 
+}
+
+
+.container_2 {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo_2 {
+    height: 168px;
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen_3 {
+    margin-top: auto;
+    width: 430px;
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marcador_2 {
+    width: 99%;
+    height: 29px;
+    margin-bottom: -11px;
+}
+
+.next_btn_2 {
+    background-color: #FF6064;
+    color: white;
+    width: 78%;
+    height: 45px;
+    border-radius: 23px;
+    border: none;
+    transition: box-shadow 0.3s;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.next_btn_2:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 375px) {
+    
+    .arrow {
+        top: 20px; 
+        left: 20px;
+    }
+    
+    .screen_3 {
+        width: 80%; 
+        height: 270px;
+        padding: 20px;
+    }
+
+    .marcador_2 {
+        width: 60px; 
+        height: 15px; 
+    }
+    
+    .p {
+        font-weight: 700;
+        font-family: "Inter", sans-serif;
+        font-size: 32px; 
+        text-align: center;
+    }
+
+    .next_btn_2 {
+        width: 90%; 
+        height: 45px; 
+    }
+
+    .conteudo_2 {
+        height: auto; 
+        width: 90%; 
+    }
+}
