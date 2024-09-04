@@ -1,3 +1,3 @@
 function redirect() {
-    window.location.href = 'gain_insights.html';
+    window.location.href = 'introducao_2.html';
 }
