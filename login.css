@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    font-family: "Inter", sans-serif;
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-flow: column wrap;
+}
+
+.arrow {
+    position: absolute; 
+    width: 39px; 
+    height: 31.42px; 
+    top: 40px; 
+    left: 100px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.arrow i {
+    font-size: 24px; 
+    color: black; 
+}
+
+.arrow:hover i {
+    color: #FF6064; 
+}
+
+
+
+.text {
+    position: absolute;
+    width: 262px;
+    height: 46px;
+    padding: -10px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 32px; 
+    line-height: 46px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 32px; 
+    line-height: 46px;
+    color: #000;
+}
+
+.container {
+    width: 336px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+    margin-top: 100px;
+}
+
+.fb_link, .google_link, .apple_link {
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    width: 80%;
+    height: 39px;
+    border-radius: 23px;
+    transition: box-shadow 0.3s;
+    margin-top: 0; 
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fb_link {
+    margin-top: 0;
+}
+
+.google_link {
+    margin-top: 20px;
+}
+
+.apple_link {
+    margin-top: 20px;
+}
+
+.fb_link img, .google_link img, .apple_link img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.fb_link span, .google_link span, .apple_link span {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fb_link:hover, .google_link:hover, .apple_link:hover {
+    background-color: #DDDDDD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+    margin: 60px 0;
+}
+
+.login_btn {
+    background-color: #FF6064;
+    color: white;
+    width: 100%;
+    height: 42px;
+    border-radius: 23px;
+    border: none;
+    transition: box-shadow 0.3s;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.signup-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #FF6064;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
