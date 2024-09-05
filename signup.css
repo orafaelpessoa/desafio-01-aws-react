@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body,
+html {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    top: -40px;
+    left: -960px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6064;
+}
+
+
+
+.container_pomo {
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+    margin-left: -40%;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 294px;
+    margin: 0 auto;
+}
+
+.container_form {
+    border: solid 1px red;
+    background-color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; 
+    width: 400px;
+    height: 400px; 
+    margin-right: -300px;  
+    left: 257px;
+}
+
+.container_form input,
+.container_form button {
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
