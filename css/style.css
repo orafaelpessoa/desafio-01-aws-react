@@ -43,3 +43,24 @@ html {
     width: 50px;
     height: 50px;
 }
+
+@media (max-width: 375px) and (max-height: 880px) {
+    .container {
+        padding: 15px;
+    }
+
+    .logo {
+        margin-top: 50px;
+        max-width: 120px;
+    }
+
+    .loader {
+        bottom: -150px;
+        margin-top: 30px;
+    }
+
+    .load {
+        width: 40px;
+        height: 40px;
+    }
+}

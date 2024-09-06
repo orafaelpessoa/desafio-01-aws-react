@@ -106,3 +106,36 @@ html {
     font-size: 12px;
     display: none;
 }
+
+@media (max-width: 768px) {
+    body,
+    html {
+        align-items: center;
+        flex-direction: column;
+        height: 100vh; 
+        margin: 0;
+    }
+
+    .container_pomo {
+        width: 300px;
+        height: 300px;
+        margin-right: -30px; 
+        margin-bottom: 20px;
+        margin-top: -60px;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 80%; 
+        max-width: 394px;
+    }
+
+    .container_form {
+        width: 100%;
+        max-width: 600px;
+        margin-top: -60px;
+        box-sizing: border-box;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
