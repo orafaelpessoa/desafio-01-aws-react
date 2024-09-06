@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/pomo_login.css">
+</head>
+<body>
+    
+    <div class="container_pomo">
+        <img src="../images/logo-pomo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="container_login">
+        <p class="login">Login</p>
+        <form class="signIn_form" id="signIn_Form">
+            <label for="email" class="form_label">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" class="form_input">
+            
+            <label for="password" class="form_label">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" class="form_input">
+        </form>
+        
+        <div class="button_wrapper">
+            <button type="button" class="login_btn" onclick="login()">Login</button>
+            <button type="button" class="create_btn" onclick="redirect2()">Create Account</button>
+        </div>
+    </div>
+
+    <script src="../js/pomo_login.js"></script>
+</body>
+</html>
