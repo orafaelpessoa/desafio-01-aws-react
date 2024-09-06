@@ -34,5 +34,5 @@ function createAccount() {
     
     localStorage.setItem('userData', JSON.stringify(formData));
     
-    window.location.href = 'home.html';
+    window.location.href = 'pomo_login.html';
 }
