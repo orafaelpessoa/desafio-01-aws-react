@@ -146,3 +146,125 @@ html, body {
 .signup-link a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 375px) and (max-height: 880px) {
+    .arrow {
+        position: fixed; 
+        width: 35px; 
+        height: 28.28px; 
+        top: 10px; 
+        left: 15px; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+
+    .arrow i {
+        font-size: 22px; 
+        color: black; 
+    }
+
+    .arrow:hover i {
+        color: #FF6064; 
+    }
+
+    .text {
+        position: absolute;
+        width: 200px;
+        height: 36px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 24px; 
+        line-height: 36px;
+    }
+
+    .text p {
+        margin: 0;
+        font-size: 24px; 
+        line-height: 36px;
+        margin-top: 40px;
+        color: #000;
+    }
+
+    .container {
+        width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box; 
+        margin-top: -260px;
+    }
+
+    .fb_link, .google_link, .apple_link {
+        display: flex;
+        align-items: center;
+        border: solid 1px black;
+        width: 80%;
+        height: 35px;
+        border-radius: 23px;
+        transition: box-shadow 0.3s;
+        margin-top: 10px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .fb_link img, .google_link img, .apple_link img {
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    .fb_link span, .google_link span, .apple_link span {
+        flex: 1;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .fb_link:hover, .google_link:hover, .apple_link:hover {
+        background-color: #DDDDDD;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .container p {
+        margin: 20px 10px;
+        
+    }
+
+    .login_btn {
+        background-color: #FF6064;
+        color: white;
+        width: 100%;
+        height: 40px;
+        border-radius: 23px;
+        border: none;
+        transition: box-shadow 0.3s;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .login_btn:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .signup-link {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .signup-link a {
+        color: #FF6064;
+        text-decoration: none;
+    }
+
+    .signup-link a:hover {
+        text-decoration: underline;
+    }
+}

@@ -86,38 +86,81 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 375px) {
-    
+@media (max-width: 375px) and (max-height: 880px) {
     .arrow {
-        top: 20px; 
-        left: 20px;
+        position: fixed;
+        width: 35px; 
+        height: 28.28px; 
+        top: 10px; 
+        left: 15px; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, color 0.3s ease; 
     }
 
-    .screen_4 {
-        width: 80%; 
-        height: 270px;
+    .arrow i {
+        font-size: 22px;
+        color: black;
+    }
+
+    .arrow:hover i {
+        color: #FF6064;
+    }
+
+    .container_3 {
+        display: flex;
+        flex-flow: column wrap;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
         padding: 20px;
     }
 
-    .marcador_03 {
-        width: 60px; 
-        height: 15px; 
+    .conteudo_3 {
+        height: 150px;
+        width: 85%;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .p {
-        font-weight: 700;
-        font-family: "Inter", sans-serif;
-        font-size: 32px; 
-        text-align: center;
+    .screen_4 {
+        margin-top: auto;
+        width: 387px;
+        height: 270px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .marcador_03 {
+        width: 89%;
+        height: 26px;
+        margin-bottom: 10px;
+        transform: translateX(100px);
     }
 
     .next_btn_3 {
-        width: 90%; 
-        height: 45px; 
+        background-color: #FF6064;
+        color: white;
+        width: 70%; 
+        height: 40px;
+        border-radius: 23px;
+        border: none;
+        transition: box-shadow 0.3s;
+        margin-top: 20px;
+        cursor: pointer;
     }
 
-    .conteudo_3 {
-        height: auto; 
-        width: 90%; 
+    .next_btn_3:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 }
