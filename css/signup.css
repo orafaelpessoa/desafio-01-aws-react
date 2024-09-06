@@ -98,3 +98,9 @@ html {
     color: black;
     border: solid 1px black;
 }
+
+#error_message {
+    color: rgb(231, 72, 72);
+    font-size: 12px;
+    display: none;
+}

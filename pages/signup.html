@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
     
     <div class="container_pomo">
-        <img src="logo-pomo.png" alt="Logo" class="logo">
+        <img src="../images/logo-pomo.png" alt="Logo" class="logo">
     </div>
 
     <div class="container_form">
         <p class="form_title">Create your account</p>
-        <form class="signup_form" onsubmit="return false;"> <!-- Prevent form submission -->
+        <form class="signup_form" id="signupForm">
             <label for="name" class="form_label">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" class="form_input">
             
@@ -27,14 +27,16 @@
             <label for="confirm_password" class="form_label">Confirm Password</label>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" class="form_input">
             
+            <div id="error_message">Please fill in all fields correctly.</div>
+
             <div class="button_wrapper">
-                <button type="button" class="signup_btn" onclick="redirect()">Create Account</button>
-                <button type="button" class="back_btn" onclick="goBack()">Go Back</button>
+                <button type="button" class="signup_btn" onclick="createAccount()">Create Account</button>
+                <button type="button" class="back_btn" onclick="redirect2()">Go Back</button>
             </div>
         </form>
     </div>
 
-    <script src="signup.js"></script>
+    <script src="../js/signup.js"></script>
 
 </body>
 </html>
