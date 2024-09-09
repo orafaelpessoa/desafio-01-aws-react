@@ -26,7 +26,6 @@ function createAccount() {
         return;
     }
 
-    // Verifica se o e-mail já está cadastrado
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
     const emailExists = existingUsers.some(user => user.email === email);
     
@@ -67,5 +66,5 @@ function createAccount() {
 document.getElementById('closeModal').onclick = function() {
     const successModal = document.getElementById('successModal');
     successModal.style.display = 'none';
-    window.location.href = 'pomo_login.html';
+    window.location.href = 'user_data.html';
 };
