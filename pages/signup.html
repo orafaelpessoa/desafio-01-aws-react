@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="../css/signup.css">
 </head>
+
 <body>
-    
+
     <div class="container_pomo">
         <img src="../images/logo-pomo.png" alt="Logo" class="logo">
     </div>
@@ -17,16 +19,17 @@
         <form class="signup_form" id="signupForm">
             <label for="name" class="form_label">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" class="form_input">
-            
+
             <label for="email" class="form_label">E-mail</label>
             <input type="email" id="email" name="email" placeholder="E-mail" class="form_input">
-            
+
             <label for="password" class="form_label">Password</label>
             <input type="password" id="password" name="password" placeholder="Password" class="form_input">
-            
+
             <label for="confirm_password" class="form_label">Confirm Password</label>
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" class="form_input">
-            
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"
+                class="form_input">
+
             <div id="error_message">Please fill in all fields correctly.</div>
 
             <div class="button_wrapper">
@@ -36,7 +39,15 @@
         </form>
     </div>
 
+    <div id="successModal" class="modal">
+        <div class="modal_content">
+            <p>Usuário registrado com sucesso!</p>
+            <button id="closeModal" class="modal_btn">Ok</button>
+        </div>
+    </div>
+
     <script src="../js/signup.js"></script>
 
 </body>
+
 </html>
